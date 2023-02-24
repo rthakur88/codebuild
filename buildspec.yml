@@ -23,7 +23,7 @@ phases:
       - docker push 334240579318.dkr.ecr.us-east-1.amazonaws.com/repo1:latest
       - docker push 334240579318.dkr.ecr.us-east-1.amazonaws.com/repo1:$IMAGE_TAG
       - echo Writing image definitions file...
-      - printf '[{"name":"nodeapp","imageUri":"%s"}]' 334240579318.dkr.ecr.us-east-1.amazonaws.com/repo1:$IMAGE_TAG > imagedefinitions.json
+      - printf '[{"name":"newapplication","imageUri":"%s"}]' 334240579318.dkr.ecr.us-east-1.amazonaws.com/repo1:$IMAGE_TAG > imagedefinitions.json
       - cat imagedefinitions.json 
 artifacts:
     files: imagedefinitions.json
